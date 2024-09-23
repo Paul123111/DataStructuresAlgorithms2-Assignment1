@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="464.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dataalg2assignment1.controllers.MainViewController">
+   <children>
+      <HBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="464.0" prefWidth="202.0" styleClass="sidePanel">
+               <children>
+                  <FlowPane prefHeight="478.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="TOP_CENTER" prefHeight="18.0" prefWidth="200.0" text="Colour Picker" />
+                        <FlowPane alignment="TOP_CENTER" prefHeight="13.0" prefWidth="200.0">
+                           <children>
+                              <FlowPane fx:id="leftClickColour" alignment="TOP_CENTER" prefHeight="34.0" prefWidth="34.0" styleClass="colorPicker">
+                                 <FlowPane.margin>
+                                    <Insets top="10.0" />
+                                 </FlowPane.margin>
+                              </FlowPane>
+                              <FlowPane fx:id="rightClickColour" prefHeight="34.0" prefWidth="34.0" styleClass="colorPicker">
+                                 <FlowPane.margin>
+                                    <Insets left="30.0" top="10.0" />
+                                 </FlowPane.margin>
+                              </FlowPane>
+                           </children>
+                        </FlowPane>
+                        <FlowPane alignment="TOP_CENTER" prefHeight="44.0" prefWidth="200.0">
+                           <children>
+                              <Label text="Minimum Size: ">
+                                 <FlowPane.margin>
+                                    <Insets right="1.0" />
+                                 </FlowPane.margin>
+                              </Label>
+                              <TextField fx:id="minSize" prefHeight="26.0" prefWidth="132.0" />
+                           </children>
+                           <FlowPane.margin>
+                              <Insets top="10.0" />
+                           </FlowPane.margin>
+                        </FlowPane>
+                        <FlowPane alignment="TOP_CENTER" prefHeight="44.0" prefWidth="201.0">
+                           <children>
+                              <Label text="Maximum Size:">
+                                 <FlowPane.margin>
+                                    <Insets right="1.0" />
+                                 </FlowPane.margin>
+                              </Label>
+                              <TextField fx:id="maxSize" prefHeight="26.0" prefWidth="132.0" />
+                           </children>
+                           <FlowPane.margin>
+                              <Insets top="10.0" />
+                           </FlowPane.margin>
+                        </FlowPane>
+                        <FlowPane prefHeight="45.0" prefWidth="201.0">
+                           <children>
+                              <Label alignment="TOP_CENTER" prefHeight="18.0" prefWidth="202.0" text="Minimum Boundary:">
+                                 <FlowPane.margin>
+                                    <Insets right="1.0" />
+                                 </FlowPane.margin>
+                              </Label>
+                              <FlowPane alignment="TOP_CENTER" prefHeight="26.0" prefWidth="205.0">
+                                 <children>
+                                    <Label alignment="TOP_CENTER" prefHeight="18.0" prefWidth="15.0" text="X:" />
+                                    <TextField fx:id="minX" prefHeight="26.0" prefWidth="51.0" />
+                                    <Label alignment="TOP_CENTER" prefHeight="18.0" prefWidth="15.0" text="Y:" />
+                                    <TextField fx:id="minY" prefHeight="26.0" prefWidth="51.0" />
+                                 </children>
+                              </FlowPane>
+                              <FlowPane prefHeight="45.0" prefWidth="201.0">
+                                 <children>
+                                    <Label alignment="TOP_CENTER" prefHeight="18.0" prefWidth="202.0" text="Maximum Boundary:">
+                                       <FlowPane.margin>
+                                          <Insets right="1.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <FlowPane alignment="TOP_CENTER" prefHeight="26.0" prefWidth="205.0">
+                                       <children>
+                                          <Label alignment="TOP_CENTER" prefHeight="18.0" prefWidth="15.0" text="X:" />
+                                          <TextField fx:id="maxX" prefHeight="26.0" prefWidth="51.0" />
+                                          <Label alignment="TOP_CENTER" prefHeight="18.0" prefWidth="15.0" text="Y:" />
+                                          <TextField fx:id="maxY" prefHeight="26.0" prefWidth="51.0" />
+                                       </children>
+                                    </FlowPane>
+                                 </children>
+                                 <FlowPane.margin>
+                                    <Insets top="10.0" />
+                                 </FlowPane.margin>
+                              </FlowPane>
+                           </children>
+                           <FlowPane.margin>
+                              <Insets top="10.0" />
+                           </FlowPane.margin>
+                        </FlowPane>
+                        <FlowPane alignment="TOP_CENTER" prefHeight="44.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="TOP_CENTER" prefHeight="18.0" prefWidth="202.0" text="Distance:">
+                                 <FlowPane.margin>
+                                    <Insets />
+                                 </FlowPane.margin>
+                              </Label>
+                              <TextField fx:id="distance" prefHeight="26.0" prefWidth="132.0" />
+                           </children>
+                           <FlowPane.margin>
+                              <Insets top="10.0" />
+                           </FlowPane.margin>
+                        </FlowPane>
+                        <FlowPane alignment="TOP_CENTER" prefHeight="44.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="TOP_CENTER" prefHeight="18.0" prefWidth="202.0" text="Name/Type:">
+                                 <FlowPane.margin>
+                                    <Insets right="1.0" />
+                                 </FlowPane.margin>
+                              </Label>
+                              <TextField fx:id="name" prefHeight="26.0" prefWidth="132.0" />
+                           </children>
+                           <FlowPane.margin>
+                              <Insets top="10.0" />
+                           </FlowPane.margin>
+                        </FlowPane>
+                        <FlowPane prefHeight="18.0" prefWidth="198.0">
+                           <children>
+                              <Label fx:id="pillsDetected" alignment="TOP_CENTER" prefHeight="18.0" prefWidth="200.0" text="Pills Detected: 0" />
+                           </children>
+                           <FlowPane.margin>
+                              <Insets top="10.0" />
+                           </FlowPane.margin>
+                        </FlowPane>
+                        <FlowPane alignment="TOP_CENTER" prefHeight="26.0" prefWidth="200.0">
+                           <children>
+                              <Button mnemonicParsing="false" text="Exit" onAction="#exit"/>
+                           </children>
+                           <FlowPane.margin>
+                              <Insets top="10.0" />
+                           </FlowPane.margin>
+                        </FlowPane>
+                     </children>
+                  </FlowPane>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="464.0" prefWidth="761.0">
+               <children>
+                  <FlowPane alignment="TOP_CENTER">
+                     <children>
+                        <Label text="Welcome to the Pills and Capsule Analyser" />
+                     </children>
+                  </FlowPane>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <VBox prefHeight="120.0" prefWidth="637.0">
+                           <children>
+                              <FlowPane alignment="TOP_CENTER">
+                                 <children>
+                                    <ChoiceBox fx:id="options" prefWidth="150.0" />
+                                    <Button mnemonicParsing="false" onAction="#executeSelectedOption" text="Enter">
+                                       <FlowPane.margin>
+                                          <Insets left="10.0" />
+                                       </FlowPane.margin>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </FlowPane>
+                              <FlowPane alignment="TOP_CENTER">
+                                 <children>
+                                    <Label text="          Hue Threshold: " />
+                                    <Slider fx:id="hueThreshold" prefHeight="14.0" prefWidth="195.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </FlowPane>
+                              <FlowPane alignment="TOP_CENTER">
+                                 <children>
+                                    <Label text="Saturation Threshold: " />
+                                    <Slider fx:id="saturationThreshold" prefHeight="14.0" prefWidth="195.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </FlowPane>
+                              <FlowPane alignment="TOP_CENTER">
+                                 <children>
+                                    <Label text="Brightness Threshold: " />
+                                    <Slider fx:id="brightnessThreshold" prefHeight="14.0" prefWidth="195.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </FlowPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <FlowPane alignment="TOP_CENTER">
+                     <children>
+                        <FlowPane prefHeight="300.0" prefWidth="151.0" styleClass="colorPicker">
+                           <children>
+                              <ImageView fx:id="originalImageView" fitHeight="300.0" fitWidth="300.0" pickOnBounds="false" preserveRatio="true" />
+                           </children>
+                           <FlowPane.margin>
+                              <Insets right="10.0" />
+                           </FlowPane.margin>
+                        </FlowPane>
+                        <FlowPane prefHeight="300.0" prefWidth="53.0" styleClass="colorPicker">
+                           <children>
+                              <Pane fx:id="numberPane" prefWidth="300.0">
+                                 <children>
+                                    <ImageView fx:id="imageView" fitHeight="300.0" fitWidth="300.0" pickOnBounds="false" preserveRatio="true" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </FlowPane>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </FlowPane>
+               </children>
+            </VBox>
+            <VBox fx:id="treeViewPane" alignment="TOP_CENTER" prefHeight="464.0" prefWidth="291.0" styleClass="sidePanel">
+               <children>
+                  <FlowPane alignment="TOP_CENTER">
+                     <children>
+                        <Label text="Summary of Pills" />
+                        <TreeView fx:id="treeView" prefHeight="365.0" prefWidth="164.0" />
+                     </children>
+                  </FlowPane>
+                  <FlowPane alignment="TOP_CENTER" prefHeight="26.0" prefWidth="200.0">
+                     <children>
+                        <Button mnemonicParsing="false" text="Expand All" onAction="#expandRoot"/>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </FlowPane>
+                  <FlowPane alignment="TOP_CENTER" prefHeight="26.0" prefWidth="200.0">
+                     <children>
+                        <Button mnemonicParsing="false" text="Collapse All" onAction="#collapseRoot"/>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </FlowPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,8 @@
+.sidePanel {
+    -fx-background-color: #CCCCCC;
+}
+
+.colorPicker {
+    -fx-border-color: #000000;
+    -fx-border-width: 5px;
+}
