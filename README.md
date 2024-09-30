@@ -3,7 +3,8 @@ This program's purpose is to identify pills in a given image. <br>
 It has many features and options the user can configure to accurately find the types of pills/capsules the user is searching for. <br>
 It shows the original image on the left of the program with the modified image that highlights detected pills on the right side of the screen.
 
-# Options - Check Fields to see Metrics used to Calculate some Options' Outputs
+# Options 
+- <b>Check Fields to see Metrics used to Calculate some Options' Outputs<b>
 - Load Image - loads an image from a file. <br>
 - Revert to Original - Reverts changes made to modified image <br>
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------  
